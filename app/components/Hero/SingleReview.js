@@ -58,9 +58,8 @@ const SingleReview = () => {
         </CardHeader>
         <CardBody className=" ">
           <Typography>
-            &quot;I found solution to all my design needs from Creative Tim. I
-            use them as a freelancer in my hobby projects for fun! And its
-            really affordable, very humble guys !!!&quot;
+            &quot; Logicall truly is one of the best customer service companies
+            you can work with. I highly recommend it!”&quot;
           </Typography>
         </CardBody>
       </Card>

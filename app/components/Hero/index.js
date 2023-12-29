@@ -20,8 +20,8 @@ const HeroHome = () => {
             <br /> your sales funnel.
           </Typography>
           <Typography className="mt-2 text-lg w-2/3 mb-8">
-            Sell directly to Turbo Offers. The best choice for those looking to
-            sell their home the easiest way.
+            Logicall works to service the customers who bought and convert the
+            customers who didn’t.
           </Typography>
         </div>
       </div>
@@ -37,8 +37,8 @@ const HeroHome = () => {
             Make the most of your sales funnel.
           </Typography>
           <Typography className=" mt-5  text-lg  ">
-            GetLogicall works to service the customers who bought and convert
-            the customers who didn’t.
+            Logicall works to service the customers who bought and convert the
+            customers who didn’t.
           </Typography>
           <Button className="mt-5 flex items-center gap-4">
             <svg
