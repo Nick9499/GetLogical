@@ -59,7 +59,7 @@ export function GetLogicCallNavbar() {
     <Navbar fullWidth className="mx-auto  px-4 py-2 sticky top-0 z-10">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography variant="h6" className="mr-4 cursor-pointer py-1.5 lg:ml-2">
-          <Link href="/">GetLogical</Link>
+          <Link href="/">GetLogicall</Link>
         </Typography>
         <div className="hidden lg:block">
           <NavList />
