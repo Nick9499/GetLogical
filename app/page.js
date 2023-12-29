@@ -4,6 +4,7 @@ import HeroHome from "./components/Hero";
 import SingleReview from "./components/Hero/SingleReview";
 import ConversionRate from "./components/Hero/ConversionRate";
 import ExpertHelp from "./components/ExpertHelp";
+import HelpBanner from "./components/Banner/HelpBanner";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <ConversionRate />
       </div>
       <ExpertHelp />
+      <HelpBanner />
     </>
   );
 }
