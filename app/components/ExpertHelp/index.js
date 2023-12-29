@@ -3,6 +3,7 @@ import { Typography } from "../../theme/themeRegistry";
 import ConvoCard from "./ConvoCard";
 import DashboardCard from "./DashboardCard";
 import RevenueCard from "./RevenueCard";
+import CustomerCard from "./CustomerCard";
 
 const ExpertHelp = () => {
   return (
@@ -45,7 +46,7 @@ const ExpertHelp = () => {
           </div>
         </div>
         <div className="lg:max-w-[40vw]">
-          <DashboardCard />
+          <CustomerCard />
           <div className="mt-10">
             <Typography
               variant="h6"
