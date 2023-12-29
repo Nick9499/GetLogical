@@ -2,6 +2,7 @@ import React from "react";
 import { Typography } from "../../theme/themeRegistry";
 import ConvoCard from "./ConvoCard";
 import DashboardCard from "./DashboardCard";
+import RevenueCard from "./RevenueCard";
 
 const ExpertHelp = () => {
   return (
@@ -14,8 +15,8 @@ const ExpertHelp = () => {
           Get expert help anytime.
         </Typography>
       </div>
-      <div className="mx-10 my-5">
-        <div>
+      <div className="mx-10 my-5 grid lg:grid-cols-2 gap-10 ">
+        <div className="lg:max-w-[40vw] ">
           <ConvoCard />
           <div className="mt-10">
             <Typography
@@ -29,7 +30,7 @@ const ExpertHelp = () => {
             </Typography>
           </div>
         </div>
-        <div>
+        <div className="lg:max-w-[40vw] ">
           <DashboardCard />
           <div className="mt-10">
             <Typography
@@ -40,6 +41,33 @@ const ExpertHelp = () => {
             <Typography>
               We’re so sure of our sales team, you only pay us when we get you
               more sales.
+            </Typography>
+          </div>
+        </div>
+        <div className="lg:max-w-[40vw]">
+          <DashboardCard />
+          <div className="mt-10">
+            <Typography
+              variant="h6"
+              className="font-semibold text-lg  text-[#033474]">
+              Save 1 in 5 customers
+            </Typography>
+            <Typography>
+              Average clients see 21% of their abandoned carts recovered.
+            </Typography>
+          </div>
+        </div>
+        <div className="lg:max-w-[40vw]">
+          <RevenueCard />
+          <div className="mt-10">
+            <Typography
+              variant="h6"
+              className="font-semibold text-lg  text-[#033474]">
+              Increase revenues
+            </Typography>
+            <Typography>
+              Recovered sales account for approximately 15% of our clients’
+              total revenue.
             </Typography>
           </div>
         </div>
