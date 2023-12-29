@@ -19,21 +19,21 @@ function NavList({ setOpenNav }) {
         <ListItem
           className="flex items-center gap-2 py-2 pr-4"
           onClick={() => setOpenNav(false)}>
-          <Link href="/howturbo">Services</Link>
+          <Link href="/">Services</Link>
         </ListItem>
       </Typography>
       <Typography variant="small" color="blue-gray" className="font-medium">
         <ListItem
           className="flex items-center gap-2 py-2 pr-4"
           onClick={() => setOpenNav(false)}>
-          <Link href="/howturbo">Integrations</Link>
+          <Link href="/">Integrations</Link>
         </ListItem>
       </Typography>
       <Typography variant="small" color="blue-gray" className="font-medium">
         <ListItem
           className="flex items-center gap-2 py-2 pr-4"
           onClick={() => setOpenNav(false)}>
-          <Link href="/howturbo">Testimonials</Link>
+          <Link href="/">Testimonials</Link>
         </ListItem>
       </Typography>
     </List>

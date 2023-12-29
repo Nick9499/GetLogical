@@ -72,10 +72,10 @@ const Footer = () => {
         </div>
         <div className="flex flex-col pt-10 ">
           <Typography className="capitalize pb-3">quick links</Typography>
-          <Link href="/howturbo">Services</Link>
-          <Link href="/pricing">Integrations</Link>
-          <Link href="/benefits">Testimonials</Link>
-          <Link href="/move">Contact Us</Link>
+          <Link href="/">Services</Link>
+          <Link href="/">Integrations</Link>
+          <Link href="/">Testimonials</Link>
+          <Link href="/">Contact Us</Link>
         </div>
 
         <div className="flex flex-col pt-10 pb-5">
