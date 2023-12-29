@@ -24,6 +24,8 @@ import {
   MenuHandler,
   MenuList,
   Collapse,
+  Avatar,
+  Rating,
 } from "@material-tailwind/react";
 
 export {
@@ -50,4 +52,6 @@ export {
   MenuHandler,
   MenuList,
   Collapse,
+  Avatar,
+  Rating,
 };
