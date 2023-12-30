@@ -21,6 +21,20 @@ const Contact = () => {
     }));
   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const result = await fetch("/api/send-mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
+    const data = await result.json();
+    const email = data.email;
+  };
+
   return (
     <div className=" md:px-20 lg:px-72 ">
       <div className="flex flex-col justify-center items-center pt-20 px-10">
@@ -104,7 +118,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <Button className="mt-5 flex items-center gap-4">
+        <Button onClick={handleSubmit} className="mt-5 flex items-center gap-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
