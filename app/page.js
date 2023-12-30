@@ -6,6 +6,7 @@ import ConversionRate from "./components/Hero/ConversionRate";
 import ExpertHelp from "./components/ExpertHelp";
 import HelpBanner from "./components/Banner/HelpBanner";
 import Contact from "./components/Contact";
+import Services from "./components/Services";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       </div>
       <ExpertHelp />
       <HelpBanner />
+      <Services />
       <Contact />
     </>
   );

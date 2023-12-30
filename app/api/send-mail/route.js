@@ -5,8 +5,8 @@ import nodemailer from "nodemailer";
 let transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "sarkarsubhajit307@gmail.com",
-    pass: "xxja qbqi pzqy nztl",
+    user: "hello@getlogicall.com",
+    pass: "wnsn ngvu zbeb vkvj",
   },
 });
 
@@ -17,8 +17,8 @@ export async function POST(request) {
 
   // setup email data with unicode symbols
   let mailOptions = {
-    from: "sarkarsubhajit307@gmail.com",
-    to: "sarkarsubhajit9499@gmail.com",
+    from: "hello@getlogicall.com",
+    to: "Leads@getlogicall.com",
     subject: `Customer's Information`,
     html: `
     <h2 style='text-align:center'>Customer's Information</h2>
@@ -39,6 +39,7 @@ export async function POST(request) {
     if (error) {
       return console.log(error);
     }
+    console.log(`Message sent: ${info.messageId}`);
     return new NextResponse(
       JSON.stringify({
         message: `Message sent: ${info.messageId}`,
