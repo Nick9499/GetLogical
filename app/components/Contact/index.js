@@ -23,7 +23,6 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const result = await fetch("/api/send-mail", {
       method: "POST",
       headers: {
@@ -31,8 +30,6 @@ const Contact = () => {
       },
       body: JSON.stringify(form),
     });
-    const data = await result.json();
-    const email = data.email;
   };
 
   return (
