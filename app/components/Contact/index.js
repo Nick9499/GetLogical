@@ -22,6 +22,16 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
+    if (
+      form.cName.trim().length === 0 ||
+      form.url.trim().length === 0 ||
+      form.fName.trim().length === 0 ||
+      form.email.trim.length === 0 ||
+      form.phone.trim().length === 0 ||
+      form.message.trim().length === 0
+    ) {
+      return;
+    }
     e.preventDefault();
     const result = await fetch("/api/send-mail", {
       method: "POST",
@@ -51,6 +61,7 @@ const Contact = () => {
             name="cName"
             value={form.cName}
             onChange={handleChange}
+            required={true}
           />
         </div>
         <div className="mb-5">
@@ -61,6 +72,7 @@ const Contact = () => {
             name="url"
             value={form.url}
             onChange={handleChange}
+            required={true}
           />
         </div>
         <div className="mb-5">
@@ -71,6 +83,7 @@ const Contact = () => {
             name="fName"
             value={form.fName}
             onChange={handleChange}
+            required={true}
           />
         </div>
         <div className="mb-5">
@@ -81,6 +94,7 @@ const Contact = () => {
             name="email"
             value={form.email}
             onChange={handleChange}
+            required={true}
           />
         </div>
         <div className="mb-5">
@@ -91,6 +105,7 @@ const Contact = () => {
             name="phone"
             value={form.phone}
             onChange={handleChange}
+            required={true}
           />
         </div>
         <div className="mb-5">
@@ -111,6 +126,7 @@ const Contact = () => {
             name="message"
             value={form.message}
             onChange={handleChange}
+            required={true}
           />
         </div>
       </div>

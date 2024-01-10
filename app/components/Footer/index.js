@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
 import { Typography, IconButton } from "../../theme/themeRegistry";
@@ -9,9 +10,11 @@ const Footer = () => {
     <div className="mt-20">
       <div className="flex flex-col md:grid md:grid-cols-3 md:gap-x-24  lg:gap-x-20 lg:px-20 md:pb-10  bg-[#333] text-white px-10  ">
         <div className="pt-10">
-          <Typography variant="h2" className="font-normal">
-            <Link href="/">GetLogicall</Link>
-          </Typography>
+          <Link href="/">
+            <div className="max-w-[70px] max-h-[70px]">
+              <img src="/LOGO.png" alt="logo" className="w-full h-full" />
+            </div>
+          </Link>
 
           <Typography className="pt-2">
             GetLogicall works to service the customers who bought and convert
