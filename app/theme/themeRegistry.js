@@ -26,6 +26,8 @@ import {
   Collapse,
   Avatar,
   Rating,
+  Alert,
+  Dialog,
 } from "@material-tailwind/react";
 
 export {
@@ -54,4 +56,6 @@ export {
   Collapse,
   Avatar,
   Rating,
+  Alert,
+  Dialog,
 };

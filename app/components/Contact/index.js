@@ -1,8 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import { Button, Input, Typography } from "../../theme/themeRegistry";
+import { AlertCustomAnimation } from "../Alert";
 
 const Contact = () => {
+  const [showAlert, setShowAlert] = useState(false);
+  const [alertMsg, setAlertMsg] = useState(``);
+  const [errorAlert, setErrorAlert] = useState(false);
   const [form, setForm] = useState({
     cName: "",
     url: "",
@@ -12,6 +16,10 @@ const Contact = () => {
     social_id: "",
     message: "",
   });
+
+  const handleClose = () => setShowAlert(false);
+
+  const handleOpen = () => setShowAlert(true);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,10 +34,13 @@ const Contact = () => {
       form.cName.trim().length === 0 ||
       form.url.trim().length === 0 ||
       form.fName.trim().length === 0 ||
-      form.email.trim.length === 0 ||
+      form.email.trim().length === 0 ||
       form.phone.trim().length === 0 ||
       form.message.trim().length === 0
     ) {
+      setAlertMsg(`Please fill the required fields`);
+      setErrorAlert(true);
+      handleOpen();
       return;
     }
     e.preventDefault();
@@ -40,10 +51,19 @@ const Contact = () => {
       },
       body: JSON.stringify(form),
     });
+    setErrorAlert(false);
+    handleOpen();
+    setAlertMsg(`Thanks for your feedback. We will get back to you shortly.`);
   };
 
   return (
     <div className=" md:px-20 lg:px-72 ">
+      <AlertCustomAnimation
+        open={showAlert}
+        onClose={handleClose}
+        body={alertMsg}
+        errorAlert={errorAlert}
+      />
       <div className="flex flex-col justify-center items-center pt-20 px-10">
         <Typography className="font-semibold text-3xl text-[#033474] ">
           Contact Us
