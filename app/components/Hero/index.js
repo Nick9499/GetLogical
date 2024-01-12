@@ -8,20 +8,20 @@ const HeroHome = () => {
   return (
     <>
       <div
-        className="hidden md:flex bg-contain bg-bottom h-[80vh]  items-center  pl-24"
+        className="hidden md:flex bg-contain bg-bottom h-[80vh]  items-center  pl-24 bg-gradient-to-r from-green-500 to-light-green-400"
         style={{
-          background: ` url(/hero.jpg)`,
+          // background: ` url(/hero.jpg)`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}>
         <div class=" text-white">
           <Typography variant="h1" className="font-semibold">
-            Make the most of
-            <br /> your sales funnel.
+            Elevate Your Business
+            <br />
+            with Logical.
           </Typography>
           <Typography className="mt-2 text-lg w-2/3 mb-8">
-            Logicall works to service the customers who bought and convert the
-            customers who didn’t.
+            Let us turn every call into your next big win
           </Typography>
         </div>
       </div>
@@ -34,11 +34,10 @@ const HeroHome = () => {
         }}>
         <div class=" text-white">
           <Typography variant="h1" className="text-3xl font-semibold">
-            Make the most of your sales funnel.
+            Elevate Your Business with Logical.
           </Typography>
           <Typography className=" mt-5  text-lg  ">
-            Logicall works to service the customers who bought and convert the
-            customers who didn’t.
+            Let us turn every call into your next big win
           </Typography>
           <Button className="mt-5 flex items-center gap-4">
             <svg

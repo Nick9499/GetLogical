@@ -28,6 +28,7 @@ import {
   Rating,
   Alert,
   Dialog,
+  Chip,
 } from "@material-tailwind/react";
 
 export {
@@ -58,4 +59,5 @@ export {
   Rating,
   Alert,
   Dialog,
+  Chip,
 };
