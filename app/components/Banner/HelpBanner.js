@@ -7,7 +7,7 @@ const HelpBanner = () => {
       style={{
         background: "linear-gradient(180deg, #FFFFFF 0%, #F4F8FB 100%)",
       }}
-      className="flex flex-col justify-center items-center mt-20">
+      className="flex flex-col justify-center items-center mt-20 pb-10 ">
       <div className="">
         <Typography className="font-semibold text-lg  text-[#033474]">
           See how we can help you

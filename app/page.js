@@ -11,7 +11,7 @@ import SeamLessIntegration from "./components/SeamlessIntegration";
 
 export default function Home() {
   return (
-    <>
+    <div className="font-poppins">
       <HeroHome />
       <div className="flex justify-center items-center  -mt-16 ">
         <SingleReview />
@@ -22,6 +22,6 @@ export default function Home() {
       <Services />
       <SeamLessIntegration />
       <Contact />
-    </>
+    </div>
   );
 }

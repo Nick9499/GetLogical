@@ -95,6 +95,98 @@ const Services = () => {
           </Button>
         </div>
       </div>
+
+      <div className="flex mt-20 px-20 ">
+        <div className="max-w-[50vw]">
+          <img src="/s2-phone.webp" className="w-full h-full" alt="s2-phone" />
+        </div>
+        <div>
+          <div className="flex mt-16 justify-center max-w-[50vw] ">
+            <Typography
+              variant="h5"
+              className="font-normal text-5xl text-[#033474] pb-5 leading-[1.2] ">
+              Discover what services work best for you and your brand!
+            </Typography>
+            <Typography className="max-w-[20vw]">
+              HelpGrid is your all-in-one call center that delights both
+              customer and company with amazing results. We can create a
+              seamless customer experience by utilizing all of our services
+              hand-in-hand or individually based on your business needs.
+            </Typography>
+          </div>
+          <div className="flex justify-between ">
+            <div className="mt-10 flex flex-col ">
+              <div className="max-w-[3.5vw] max-h-[3.5vw]">
+                <img
+                  className="w-full h-full"
+                  src="/icon-customer.webp"
+                  alt="icon-cart"
+                />
+              </div>
+              <div className="mt-5 text-[#5F7199] flex flex-col justify-center ">
+                <Typography
+                  variant="h6"
+                  className="text-[#033474] text-2xl font-bold pb-5 ">
+                  Customer Service
+                </Typography>
+                <Typography className="pb-7">24/7 Live agents</Typography>
+                <hr className="text-gray-900 w-[15vw] mb-2" />
+                <Typography className="pb-5">{`<2min Wait time`}</Typography>
+                <hr className="text-gray-900 w-[15vw] mb-2" />
+                <Typography className="pb-7">
+                  82% 1st Contact resolution
+                </Typography>
+              </div>
+            </div>
+            <div className="mt-10 flex flex-col justify-center ">
+              <div className="max-w-[3.5vw] max-h-[3.5vw]">
+                <img
+                  className="w-full h-full"
+                  src="/icon-cart.webp"
+                  alt="icon-cart"
+                />
+              </div>
+              <div className="mt-5 text-[#5F7199] flex flex-col justify-center ">
+                <Typography
+                  variant="h6"
+                  className="text-[#033474] text-2xl font-bold pb-5 ">
+                  Cart Recovery
+                </Typography>
+                <Typography className="pb-7">Custom integration</Typography>
+                <hr className="text-gray-900 w-[15vw] mb-2" />
+                <Typography className="pb-5">
+                  20% Average rate of recovery
+                </Typography>
+                <hr className="text-gray-900 w-[15vw] mb-2" />
+                <Typography className="pb-7">
+                  $180 Average order value
+                </Typography>
+              </div>
+            </div>
+            <div className="mt-10 flex flex-col justify-center ">
+              <div className="max-w-[3.5vw] max-h-[3.5vw]">
+                <img
+                  className="w-full h-full"
+                  src="/icon-order-taking.webp"
+                  alt="icon-cart"
+                />
+              </div>
+              <div className="mt-5 text-[#5F7199] flex flex-col justify-center ">
+                <Typography
+                  variant="h6"
+                  className="text-[#033474] text-2xl font-bold pb-5 ">
+                  Order Taking
+                </Typography>
+                <Typography className="pb-7">Responsive IVR</Typography>
+                <hr className="text-gray-900 w-[15vw] mb-2" />
+                <Typography className="pb-5">24% Conversion rate</Typography>
+                <hr className="text-gray-900 w-[15vw] mb-2" />
+                <Typography className="pb-7">Upsell to maximize AOV</Typography>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
