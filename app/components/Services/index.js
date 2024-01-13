@@ -7,18 +7,18 @@ const Services = () => {
     <>
       <div className=" flex lg:hidden  flex-col justify-center items-center px-7 ">
         <div className="">
-          <img src="/s2-phone.webp" className="w-full h-full" alt="s2-phone" />
+          <img src="/s2-phone.svg" className="w-full h-full" alt="s2-phone" />
         </div>
-        <div className="-mt-12 md:px-10  flex flex-col justify-center items-center">
+        <div className="mt-4 md:px-10  flex flex-col justify-center items-center">
           <Typography
             variant="h5"
             className="font-normal text-4xl text-[#033474] pb-5">
             Discover what services work best for you and your brand!
           </Typography>
           <Typography>
-            HelpGrid is your all-in-one call center that delights both customer
-            and company with amazing results. We can create a seamless customer
-            experience by utilizing all of our services hand-in-hand or
+            GetLogicall is your all-in-one call center that delights both
+            customer and company with amazing results. We can create a seamless
+            customer experience by utilizing all of our services hand-in-hand or
             individually based on your business needs.
           </Typography>
         </div>
@@ -98,7 +98,7 @@ const Services = () => {
 
       <div className=" hidden lg:flex mt-20 px-20 ">
         <div className="max-w-[50vw]">
-          <img src="/s2-phone.webp" className="w-full h-full" alt="s2-phone" />
+          <img src="/s2-phone.svg" className="w-full h-full" alt="s2-phone" />
         </div>
         <div>
           <div className="flex mt-16 justify-center max-w-[50vw] ">
@@ -108,7 +108,7 @@ const Services = () => {
               Discover what services work best for you and your brand!
             </Typography>
             <Typography className="max-w-[20vw]">
-              HelpGrid is your all-in-one call center that delights both
+              GetLogicall is your all-in-one call center that delights both
               customer and company with amazing results. We can create a
               seamless customer experience by utilizing all of our services
               hand-in-hand or individually based on your business needs.
