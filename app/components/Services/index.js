@@ -96,7 +96,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="flex mt-20 px-20 ">
+      <div className=" hidden lg:flex mt-20 px-20 ">
         <div className="max-w-[50vw]">
           <img src="/s2-phone.webp" className="w-full h-full" alt="s2-phone" />
         </div>

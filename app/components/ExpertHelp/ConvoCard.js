@@ -9,41 +9,39 @@ import {
 
 const ConvoCard = () => {
   return (
-    <Card>
+    <Card className="max-h-[25vh]  lg:max-h-[35vh] h-full">
       <CardBody>
         <div className="flex justify-end">
-          <Card className="ml-8 mx-0 px-0 bg-yellow-600">
-            <CardBody className="">
+          <Card className="ml-8 mx-0 px-0  bg-yellow-600">
+            <CardBody className="py-1 px-3 flex flex-col justify-center ">
               <div>
-                <Typography>John</Typography>
-                <Typography className="font-semibold">
+                <Typography className="text-xs pb-1">John</Typography>
+                <Typography className="font-medium text-sm">
                   Can you help me out?
                 </Typography>
               </div>
             </CardBody>
           </Card>
-          <Avatar src="/person.svg" size="sm" />
+          <Avatar src="/person.svg" size="sm" className="ml-3" />
         </div>
-        <div className="flex justify-start mt-5">
-          <Avatar src="/person.svg" size="sm" />
+        <div className="flex justify-start mt-5 md:mt-10">
+          <Avatar src="/person.svg" size="sm" className="mr-3" />
           <Card className="ml-10 mx-0 px-0 ">
-            <CardBody className="">
-              <div>
-                <Typography>Laurie</Typography>
-                <Typography className="font-semibold">
-                  This is Laurie from Getlogicall. I’ll be your assistant today.
-                </Typography>
-              </div>
+            <CardBody className="py-1 px-3 flex flex-col justify-center ">
+              <Typography className="text-xs pb-1">Laurie</Typography>
+              <Typography className="font-medium text-sm">
+                This is Laurie from Getlogicall. I’ll be your assistant today.
+              </Typography>
             </CardBody>
           </Card>
         </div>
-        <div className="mt-5 flex justify-end">
+        <div className="mt-3  flex justify-end">
           <Button size="sm" className="flex items-center gap-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="w-6 h-6">
+              className="w-4 h-4">
               <path
                 fillRule="evenodd"
                 d="M19.5 9.75a.75.75 0 0 1-.75.75h-4.5a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 1 1.5 0v2.69l4.72-4.72a.75.75 0 1 1 1.06 1.06L16.06 9h2.69a.75.75 0 0 1 .75.75Z"

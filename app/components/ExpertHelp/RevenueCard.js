@@ -4,7 +4,7 @@ import { Card, CardBody, Typography } from "../../theme/themeRegistry";
 
 const RevenueCard = () => {
   return (
-    <Card>
+    <Card className="max-h-[25vh]  lg:max-h-[35vh] h-full">
       <CardBody>
         <div className="flex justify-between">
           <div>
