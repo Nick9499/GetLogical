@@ -4,7 +4,7 @@ import { Button, Typography } from "../../theme/themeRegistry";
 
 const Services = () => {
   return (
-    <>
+    <div id="service">
       <div className=" flex lg:hidden  flex-col justify-center items-center px-7 ">
         <div className="">
           <img src="/s2-phone.svg" className="w-full h-full" alt="s2-phone" />
@@ -187,7 +187,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

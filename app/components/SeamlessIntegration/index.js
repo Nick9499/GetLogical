@@ -4,7 +4,7 @@ import { Button, Chip, Typography } from "../../theme/themeRegistry";
 
 const SeamLessIntegration = () => {
   return (
-    <>
+    <div id="integrations">
       <div
         className="hidden  ml-24 mt-10 lg:flex  lg:flex-row px-10 py-5"
         style={{ background: `url('/bg-green.webp')` }}>
@@ -91,7 +91,7 @@ const SeamLessIntegration = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
