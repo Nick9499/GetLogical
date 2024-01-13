@@ -13,7 +13,43 @@ import {
 import { Bars3Icon, PhoneIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-scroll";
 
-function NavList({ setOpenNav }) {
+function NavList() {
+  return (
+    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
+      <Typography variant="small" color="blue-gray" className="font-medium">
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          <Link
+            to="service"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}>
+            Services
+          </Link>
+        </ListItem>
+      </Typography>
+      <Typography variant="small" color="blue-gray" className="font-medium">
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          <Link
+            to="integrations"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}>
+            Integrations
+          </Link>
+        </ListItem>
+      </Typography>
+      <Typography variant="small" color="blue-gray" className="font-medium">
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          <Link href="/">Testimonials</Link>
+        </ListItem>
+      </Typography>
+    </List>
+  );
+}
+
+function NavListForSmallDevice({ setOpenNav }) {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <Typography variant="small" color="blue-gray" className="font-medium">
@@ -97,7 +133,7 @@ export function GetLogicCallNavbar() {
         </IconButton>
       </div>
       <Collapse open={openNav}>
-        <NavList setOpenNav={setOpenNav} />
+        <NavListForSmallDevice setOpenNav={setOpenNav} />
         <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
           <Button
             fullWidth
