@@ -57,7 +57,7 @@ const Contact = () => {
   };
 
   return (
-    <div className=" md:px-20 lg:px-72 ">
+    <div className=" md:px-20 lg:px-72 " id="contact">
       <AlertCustomAnimation
         open={showAlert}
         onClose={handleClose}

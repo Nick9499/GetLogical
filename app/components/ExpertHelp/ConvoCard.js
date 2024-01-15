@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Avatar,
@@ -8,6 +9,10 @@ import {
 } from "../../theme/themeRegistry";
 
 const ConvoCard = () => {
+  const handleCallUs = () => {
+    const phoneNumber = "8779888726";
+    window.location.href = "tel:" + phoneNumber;
+  };
   return (
     <Card className="max-h-[25vh]  lg:max-h-[35vh] h-full">
       <CardBody>
@@ -36,7 +41,10 @@ const ConvoCard = () => {
           </Card>
         </div>
         <div className="mt-3  flex justify-end">
-          <Button size="sm" className="flex items-center gap-4">
+          <Button
+            onClick={handleCallUs}
+            size="sm"
+            className="flex items-center gap-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
