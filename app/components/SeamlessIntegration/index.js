@@ -7,7 +7,11 @@ const SeamLessIntegration = () => {
     <div id="integrations">
       <div
         className="hidden  ml-24 mt-10 lg:flex  lg:flex-row px-10 py-5"
-        style={{ background: `url('/bg-green.webp')` }}>
+        style={{
+          background: `url('/bg-blue.svg')`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}>
         <div className="mt-20 px-20 max-w-[45vw] ">
           <div className="bg-[#FFE600] rounded-3xl text-center mb-5 ">
             <Typography className=" text-[#033474] font-normal ">
@@ -44,13 +48,23 @@ const SeamLessIntegration = () => {
             Contact Us
           </Button>
         </div>
-        <div>
-          <div>
-            <img src="/bg-seamless-integration.webp" alt="integrations" />
+        <div className="flex justify-center items-center">
+          <div className="">
+            <img
+              className="w-full h-full"
+              src="/bg-seamless-integration.svg"
+              alt="integrations"
+            />
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center lg:hidden bg-green-600 py-5 px-5 mt-5">
+      <div
+        className="flex flex-col justify-center items-center lg:hidden  py-5 px-5 mt-5"
+        style={{
+          background: `url('/bg-blue-fill.svg')`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}>
         <div className="bg-[#FFE600] rounded-3xl text-center mb-5 px-5 mt-10 ">
           <Typography className=" text-[#033474] font-normal ">
             SEAMLESS INTEGRATION WITH YOUR STORE
@@ -87,7 +101,7 @@ const SeamLessIntegration = () => {
         </Button>
         <div className="mt-10">
           <div>
-            <img src="/bg-seamless-integration.webp" alt="integrations" />
+            <img src="/bg-seamless-integration.svg" alt="integrations" />
           </div>
         </div>
       </div>
