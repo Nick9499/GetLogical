@@ -8,9 +8,9 @@ const HeroHome = () => {
   return (
     <>
       <div
-        className="hidden md:flex bg-contain bg-bottom h-[80vh]  items-center  pl-24 bg-gradient-to-r from-green-500 to-light-green-400"
+        className="hidden md:flex bg-contain bg-bottom h-[80vh]  items-center  pl-24 "
         style={{
-          // background: ` url(/hero.jpg)`,
+          background: ` url(/hero.svg)`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}>
@@ -28,7 +28,7 @@ const HeroHome = () => {
       <div
         className="flex md:hidden  bg-bottom  w-screen  items-center pt-24 pb-20  px-8"
         style={{
-          background: `linear-gradient(rgba(22, 160, 133, 0.6), rgba(230, 126, 34, 0.6)), url(/hero.jpg)`,
+          background: `url(/hero.svg)`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}>
