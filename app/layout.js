@@ -5,6 +5,7 @@ import GetLogicCallNavbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 
+
 const sora = Sora({
   subsets: ['latin'],
   weight: ['100', '300', '400', '500', '600', '700', '800'],
@@ -22,7 +23,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={sora.variable}>
-      
       <ThemeProvider>
         <body className="font-sora">
           <GetLogicCallNavbar />
