@@ -1,10 +1,18 @@
-import { Inter } from "next/font/google";
+import { Sora } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./theme/themeRegistry";
 import GetLogicCallNavbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+
+const sora = Sora({
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '500', '600', '700', '800'],
+  variable: '--font-sora',
+  display: 'swap',
+});
+
+
 
 export const metadata = {
   title: "GetLogicall",
@@ -13,9 +21,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={sora.variable}>
+      
       <ThemeProvider>
-        <body className={inter.className}>
+        <body className="font-sora">
           <GetLogicCallNavbar />
           {children}
           <Footer />

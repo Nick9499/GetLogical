@@ -10,7 +10,8 @@ module.exports = withMT({
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["Poppins"],
+        sora: ['var(--font-sora)', 'sans-serif'],
+        sans: ['var(--font-sora)', 'sans-serif'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
