@@ -109,7 +109,7 @@ export function GetLogicCallNavbar() {
       <div className="flex items-center justify-between text-blue-gray-900">
         <Link href="/">
           <div className="max-w-[70px] max-h-[70px]">
-            <img src="/LOGO.png" alt="logo" className="w-full h-full" />
+            <img src="/logo.svg" alt="logo" className="w-full h-full" />
           </div>
         </Link>
         <div className="hidden lg:block">

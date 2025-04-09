@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div>
       <HeroHome />
-      <div className="flex justify-center items-center  -mt-16 ">
+      {/* <div className="flex justify-center items-center  -mt-16 ">
         <SingleReview />
         <ConversionRate />
       </div>
@@ -21,7 +21,7 @@ export default function Home() {
       <HelpBanner />
       <Services />
       <SeamLessIntegration />
-      <Contact />
+      <Contact /> */}
     </div>
   );
 }
