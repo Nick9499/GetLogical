@@ -29,6 +29,9 @@ import {
   Alert,
   Dialog,
   Chip,
+  Popover,
+  PopoverContent,
+  PopoverHandler,
 } from "@material-tailwind/react";
 
 export {
@@ -60,4 +63,7 @@ export {
   Alert,
   Dialog,
   Chip,
+  Popover,
+  PopoverContent,
+  PopoverHandler,
 };

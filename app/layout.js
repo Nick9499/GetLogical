@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={sora.variable}>
       <ThemeProvider>
-        <body className="font-sora">
+        <body  className="font-sora">
           <GetLogicCallNavbar />
           {children}
           <Footer />

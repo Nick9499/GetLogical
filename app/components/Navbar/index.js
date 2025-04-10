@@ -1,5 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
+/**
+ * @format
+ */
 import React, { useEffect, useState } from "react";
 import {
   Navbar,
@@ -9,49 +12,69 @@ import {
   ListItem,
   Collapse,
   List,
+  Popover,
+  PopoverContent,
+  PopoverHandler
 } from "../../theme/themeRegistry";
 import { Bars3Icon, PhoneIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-scroll";
 
 function NavList() {
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-      <Typography variant="small" color="blue-gray" className="font-medium">
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
-          <Link
-            to="service"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}>
-            Services
-          </Link>
-        </ListItem>
-      </Typography>
-      <Typography variant="small" color="blue-gray" className="font-medium">
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
-          <Link
-            to="integrations"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}>
-            Integrations
-          </Link>
-        </ListItem>
-      </Typography>
-      <Typography variant="small" color="blue-gray" className="font-medium">
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
-          <Link href="/">Testimonials</Link>
-        </ListItem>
-      </Typography>
-    </List>
+  
+      <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
+    <Typography variant="small" color="blue-gray" className="font-medium">
+      <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <Link
+          to="service"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}>
+          Services
+        </Link>
+      </ListItem>
+    </Typography>
+    <Typography variant="small" color="blue-gray" className="font-medium">
+      <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <Link
+          to="integrations"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}>
+          Integrations
+        </Link>
+      </ListItem>
+    </Typography>
+    <Typography variant="small" color="blue-gray" className="font-medium">
+      <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <Link
+          to="lookup"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}>
+          Lookup
+        </Link>
+      </ListItem>
+    </Typography>
+    <Typography variant="small" color="blue-gray" className="font-medium">
+      <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <Link href="/">Testimonials</Link>
+      </ListItem>
+    </Typography>
+  </List>
+    
+    
   );
 }
 
 function NavListForSmallDevice({ setOpenNav }) {
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
+   
+        <List onBlur={() => setOpenNav(false)}
+         className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 ">
       <Typography variant="small" color="blue-gray" className="font-medium">
         <ListItem className="flex items-center gap-2 py-2 pr-4">
           <Link
@@ -75,6 +98,19 @@ function NavListForSmallDevice({ setOpenNav }) {
             duration={500}
             onClick={() => setOpenNav(false)}>
             Integrations
+          </Link>
+        </ListItem>
+      </Typography>
+      <Typography variant="small" color="blue-gray" className="font-medium">
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          <Link
+            to="lookup"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            onClick={() => setOpenNav(false)}>
+            Lookup
           </Link>
         </ListItem>
       </Typography>
@@ -86,6 +122,7 @@ function NavListForSmallDevice({ setOpenNav }) {
         </ListItem>
       </Typography>
     </List>
+   
   );
 }
 
@@ -105,10 +142,11 @@ export function GetLogicCallNavbar() {
   }, []);
 
   return (
-    <Navbar fullWidth className="mx-auto  px-4 py-2 sticky top-0 z-10">
+    <Navbar  className="mx-auto w-[90vw] md:w-[70vw]   px-4 py-[.01rem] md:py-2 sticky
+     mt-4 md:mt-7 rounded-[4.313rem] top-2 z-10 ">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Link href="/">
-          <div className="max-w-[70px] max-h-[70px]">
+          <div className=" max-w-[2rem] max-h-[2rem] md:max-w-[70px] md:max-h-[70px]">
             <img src="/logo.svg" alt="logo" className="w-full h-full" />
           </div>
         </Link>
@@ -116,10 +154,12 @@ export function GetLogicCallNavbar() {
           <NavList />
         </div>
         <div className="hidden gap-2 lg:flex">
-          <IconButton variant="text" onClick={handleCallUs}>
-            <PhoneIcon className="h-5 w-5" />
-          </IconButton>
+          <Button variant="filled" className="capitalize bg-[#E88E46] 
+          rounded-[2.188rem] text-base font-medium " onClick={handleCallUs}>
+            Contact Us
+          </Button>
         </div>
+        
         <IconButton
           variant="text"
           color="blue-gray"
@@ -131,18 +171,10 @@ export function GetLogicCallNavbar() {
             <Bars3Icon className="h-6 w-6" strokeWidth={2} />
           )}
         </IconButton>
+        
       </div>
-      <Collapse open={openNav}>
+      <Collapse className="fixed top-[3.8rem] left-0 w-full z-50 bg-white rounded-2xl shadow-md"  open={openNav}>
         <NavListForSmallDevice setOpenNav={setOpenNav} />
-        <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-          <Button
-            fullWidth
-            className="flex justify-center"
-            onClick={handleCallUs}>
-            <PhoneIcon className="h-4 w-4 mr-3" />
-            Give Us A Call
-          </Button>
-        </div>
       </Collapse>
     </Navbar>
   );

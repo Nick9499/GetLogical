@@ -9,12 +9,13 @@ const HeroHome = () => {
   return (
     <>
       <div
-        className="hidden md:flex bg-contain bg-bottom h-[80vh]  items-center  pl-24 "
+        className="hidden md:flex bg-contain bg-bottom h-[80vh] w-full  items-center -mt-24  pl-24 relative "
         style={{
-          background: ` url(/hero.svg)`,
+          background: ` url(/banner.svg)`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-        }}>
+        }}
+        >
         <div class=" text-white">
           <Typography variant="h1" className="font-semibold">
             Elevate Your Business
@@ -27,9 +28,9 @@ const HeroHome = () => {
         </div>
       </div>
       <div
-        className="flex md:hidden  bg-bottom  w-screen  items-center pt-24 pb-20  px-8"
+        className="flex md:hidden -mt-16  bg-bottom  w-screen  items-center pt-24 pb-20  px-8"
         style={{
-          background: `url(/hero.svg)`,
+          background: `url(/banner.svg)`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}>
