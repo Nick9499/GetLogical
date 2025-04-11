@@ -7,7 +7,7 @@ import { PhoneIcon } from "@heroicons/react/24/solid";
 import { FiFacebook } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa6";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
-import LocationIcon from "../../../assets/location_icon.svg";
+import { PiMapPinAreaBold } from "react-icons/pi";
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
         className="flex flex-col items-center text-center md:grid md:grid-cols-3 md:gap-x-24
         lg:gap-x-20 lg:px-20 md:pb-10   text-white px-10  "
       >
-        <div className="pt-10 flex flex-col items-center">
+        <div className="pt-10 md:pt-0 flex flex-col items-center ">
           <Link href="/">
             <div className="max-w-[70px] max-h-[70px]">
               <img src="/logo_white.svg" alt="logo" className="w-full h-full" />
@@ -48,7 +48,7 @@ const Footer = () => {
             </IconButton>
           </div>
         </div>
-        <div className="flex flex-col pt-9 ">
+        <div className="flex flex-col pt-9 md:pt-0 ">
           <Typography className="capitalize pb-2 text-[1.375rem] leading-[26px] font-semibold ">
             quick links
           </Typography>
@@ -66,24 +66,33 @@ const Footer = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col items-center pt-9 pb-">
+        <div className="flex flex-col items-center md:items-start pt-9 md:pt-20 ">
           <Typography className="pb-5 text-[1.375rem] capitalize font-semibold leading-[26px]">
             Contact Us
           </Typography>
-          <LiaPhoneVolumeSolid className="w-[1.5rem] h-[1.5rem] mb-1 " />
-          <Typography className="pb-1 font-medium text-[1.15rem] leading-[1.5rem] ">
-            Phone
-          </Typography>
-          <Typography className="pb-1 text-[.75rem] font-normal leading-[1.5rem] ">
-            914-517-0226
-          </Typography>
-          <LocationIcon className=" w-[1.5rem] h-[1.5rem] mt-5 mb-1 " />
-          <Typography className="pb-1 font-medium text-[1.15rem] leading-[1.5rem] ">
-            Location
-          </Typography>
-          <Typography className="pb-1 text-[.75rem] font-normal leading-[1.5rem]">
-            16192 COASTAL HIGHWAY LEWES, DELAWARE 19958
-          </Typography>
+
+          <div className="flex flex-col md:gap-2 md:flex-row items-center md:items-start md:mb-5">
+            <LiaPhoneVolumeSolid className="w-[1.5rem] h-[1.5rem] md:w-[1.25rem] md:h-[1.25rem] mb-1 " />
+            <div className="flex flex-col items-center md:items-start">
+              <Typography className="pb-1 font-medium text-[1.15rem] leading-[1.5rem] md:text-[#828282] ">
+                Phone
+              </Typography>
+              <Typography className="pb-1 text-[1rem] font-normal leading-[1.5rem] ">
+                914-517-0226
+              </Typography>
+            </div>
+          </div>
+          <div className="flex flex-col md:gap-2 md:flex-row items-center md:items-start mt-5 md:mb-5">
+            <PiMapPinAreaBold className="w-[1.5rem] h-[1.5rem] md:w-[3rem] md:h-[3rem] lg:w-[2rem] lg:h-[2rem] mb-1 " />
+            <div className="flex flex-col items-center md:items-start">
+              <Typography className="pb-1 font-medium text-[1.15rem] leading-[1.5rem] md:text-[#828282] ">
+                Location
+              </Typography>
+              <Typography className="pb-1 text-[1rem] md:text-[1rem] font-normal leading-[1.5rem] md:text-left ">
+                16192 COASTAL HIGHWAY LEWES, DELAWARE 19958
+              </Typography>
+            </div>
+          </div>
         </div>
       </div>
 
