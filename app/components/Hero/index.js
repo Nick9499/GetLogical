@@ -35,7 +35,7 @@ const HeroHome = () => {
           backgroundSize: "cover",
         }}>
         <div class=" text-white">
-          <Typography variant="h1" className="text-3xl font-semibold">
+          <Typography variant="h1" className="text-[2.375rem] font-semibold">
             Elevate Your Business with Logical.
           </Typography>
           <Typography className=" mt-5  text-lg  ">
