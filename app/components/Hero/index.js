@@ -22,7 +22,7 @@ const HeroHome = () => {
         }}
       >
         <div className="px-[15%]  max-w-[80vw] flex flex-col gap-8 lg:mt-[20%] xl:mt-[10%]   ">
-          <div class=" text-white">
+          <div className=" text-white">
             <Typography variant="h1" className="font-bold text-[4rem]  ">
               Elevate Your Business with UpSales.
             </Typography>
@@ -106,7 +106,7 @@ const HeroHome = () => {
           backgroundSize: "cover",
         }}
       >
-        <div class=" text-white md:mt-12">
+        <div className=" text-white md:mt-12">
           <Typography
             variant="h1"
             className="text-[1.8rem] font-semibold text-center"
