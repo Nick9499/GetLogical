@@ -16,9 +16,9 @@ export default function Home() {
       {/* <div className="flex justify-center items-center  -mt-16 ">
         <SingleReview />
         <ConversionRate />
-      </div>
+      </div> */}
       <ExpertHelp />
-      <HelpBanner />
+      {/* <HelpBanner />
       <Services />
       <SeamLessIntegration />
       <Contact /> */}
