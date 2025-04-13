@@ -18,9 +18,9 @@ export default function Home() {
         <ConversionRate />
       </div> */}
       <ExpertHelp />
-      {/* <HelpBanner />
+      {/* <HelpBanner /> */}
       <Services />
-      <SeamLessIntegration />
+      {/* <SeamLessIntegration />
       <Contact /> */}
     </div>
   );

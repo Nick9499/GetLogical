@@ -4,107 +4,83 @@ import React from "react";
 import { Button, Typography } from "../../theme/themeRegistry";
 import { Link } from "react-scroll";
 
+const SERVICES = [
+  {
+    imgUrl: "/high_impact.svg",
+    title: "High Impact Upselling",
+    subtitle1: "24/7 Live Agents",
+    subtitle2: "2 Min Wait Time",
+    subtitle3: "82% 1st Contact Resolution",
+  },
+  {
+    imgUrl: "/high_impact.svg",
+    title: "Cart Recovery",
+    subtitle1: "Custom Integrations",
+    subtitle2: "20% Average Rate of Recovery",
+    subtitle3: "$180 Average Order Value",
+  },
+  {
+    imgUrl: "/high_impact.svg",
+    title: "High Ticket Coaching",
+    subtitle1: "One-on-one expert coaching.",
+    subtitle2: "Focused on health and wellness.",
+    subtitle3: "Close premium, high-value sales.",
+  },
+];
+
 const Services = () => {
   return (
-    <div id="service">
-      <div className=" flex lg:hidden  flex-col justify-center items-center px-7 ">
-        <div className="">
-          <img src="/s2-phone.svg" className="w-full h-full" alt="s2-phone" />
-        </div>
-        <div className="mt-4 md:px-10  flex flex-col justify-center items-center">
-          <Typography
-            variant="h5"
-            className="font-normal text-4xl text-[#033474] pb-5">
-            Discover what services work best for you and your brand!
-          </Typography>
-          <Typography>
-            GetLogicall is your all-in-one call center that delights both
-            customer and company with amazing results. We can create a seamless
-            customer experience by utilizing all of our services hand-in-hand or
-            individually based on your business needs.
-          </Typography>
-        </div>
-        <div className="mt-10 flex flex-col justify-center items-center">
-          <div>
-            <img src="/icon-customer.webp" alt="icon-cart" />
-          </div>
-          <div className="mt-5 text-[#5F7199] flex flex-col justify-center items-center">
-            <Typography
-              variant="h6"
-              className="text-[#033474] text-2xl font-bold pb-5 ">
-              Customer Service
-            </Typography>
-            <Typography className="pb-7">24/7 Live agents</Typography>
-            <hr className="text-gray-900 w-[80vw] mb-2" />
-            <Typography className="pb-5">{`<2min Wait time`}</Typography>
-            <hr className="text-gray-900 w-[80vw] mb-2" />
-            <Typography className="pb-7">82% 1st Contact resolution</Typography>
-          </div>
-        </div>
-        <div className="mt-10 flex flex-col justify-center items-center">
-          <div>
-            <img src="/icon-cart.webp" alt="icon-cart" />
-          </div>
-          <div className="mt-5 text-[#5F7199] flex flex-col justify-center items-center">
-            <Typography
-              variant="h6"
-              className="text-[#033474] text-2xl font-bold pb-5 ">
-              Cart Recovery
-            </Typography>
-            <Typography className="pb-7">Custom integration</Typography>
-            <hr className="text-gray-900 w-[80vw] mb-2" />
-            <Typography className="pb-5">
-              20% Average rate of recovery
-            </Typography>
-            <hr className="text-gray-900 w-[80vw] mb-2" />
-            <Typography className="pb-7">$180 Average order value</Typography>
-          </div>
-        </div>
-        <div className="mt-10 flex flex-col justify-center items-center">
-          <div>
-            <img src="/icon-order-taking.webp" alt="icon-cart" />
-          </div>
-          <div className="mt-5 text-[#5F7199] flex flex-col justify-center items-center">
-            <Typography
-              variant="h6"
-              className="text-[#033474] text-2xl font-bold pb-5 ">
-              Order Taking
-            </Typography>
-            <Typography className="pb-7">Responsive IVR</Typography>
-            <hr className="text-gray-900 w-[80vw] mb-2" />
-            <Typography className="pb-5">24% Conversion rate</Typography>
-            <hr className="text-gray-900 w-[80vw] mb-2" />
-            <Typography className="pb-7">Upsell to maximize AOV</Typography>
-          </div>
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}>
-            <Button className="mt-5 flex items-center gap-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-5 h-5">
-                <path
-                  fillRule="evenodd"
-                  d="M15 3.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0V5.56l-4.72 4.72a.75.75 0 1 1-1.06-1.06l4.72-4.72h-2.69a.75.75 0 0 1-.75-.75Z"
-                  clipRule="evenodd"
-                />
-                <path
-                  fillRule="evenodd"
-                  d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Contact Us
-            </Button>
-          </Link>
-        </div>
+    <div id="service" className="mt-5">
+      <div className="flex  flex-col items-center text-center gap-3 px-2">
+        <Typography className="text-[1.6rem] font-semibold text-[#0E0E0E]  ">
+          Sales-Driven Solutions That{" "}
+          <span className="text-[#E88E46]">Boost</span> Your AOV!!
+        </Typography>
+        <Typography className="text-[#0E0E0E] text-[.75rem] leading-[1.25rem] px-3 ">
+          GetLogicall is your all-in-one call center that delights both customer
+          and company with amazing results. We can create a seamless customer
+          experience by utilizing all of our services hand-in-hand or
+          individually based on your business needs.
+        </Typography>
       </div>
-
+      <div className="flex flex-col items-center gap-10 mt-10">
+        {SERVICES.map(
+          ({ imgUrl, subtitle1, subtitle2, subtitle3, title }, i) => (
+            <div className="flex flex-col gap-1 items-center">
+              <img src={imgUrl} className="w-[3.5rem] h-[3.5rem]  " />
+              <Typography className="text-[1.1rem] font-bold leading-[1.75rem] ">
+                {title}
+              </Typography>
+              <Typography className="text-[.875rem] leading-[1.6rem] font-normal ">
+                {subtitle1}
+              </Typography>
+              <Typography className="text-[.875rem] leading-[1.6rem] font-normal ">
+                {subtitle2}
+              </Typography>
+              <Typography className="text-[.875rem] leading-[1.6rem] font-normal ">
+                {subtitle3}
+              </Typography>
+            </div>
+          )
+        )}
+      </div>
+      <div className="flex flex-col gap-5 justify-center items-center mt-16">
+        <img
+          src="/customer_agent.svg"
+          className="w-[10.8rem] h-[21.25rem] shadow-md "
+        />
+        <div className="flex flex-col items-center">
+          <Typography className="text-[1.25rem] text-[#0E0E0E] font-semibold ">
+            See How We Can Help You
+          </Typography>
+          <Typography className="text-base font-normal ">
+            Schedule a Demo today!
+          </Typography>
+        </div>
+        <Button className="bg-[#212D3F] rounded-3xl normal-case ">
+          Contact Us
+        </Button>
+      </div>
       <div className=" hidden lg:flex mt-20 px-20 ">
         <div className="max-w-[50vw]">
           <img src="/s2-phone.svg" className="w-full h-full" alt="s2-phone" />
@@ -113,7 +89,8 @@ const Services = () => {
           <div className="flex mt-16 justify-center max-w-[50vw] ">
             <Typography
               variant="h5"
-              className="font-normal text-5xl text-[#033474] pb-5 leading-[1.2] ">
+              className="font-normal text-5xl text-[#033474] pb-5 leading-[1.2] "
+            >
               Discover what services work best for you and your brand!
             </Typography>
             <Typography className="max-w-[20vw]">
@@ -135,7 +112,8 @@ const Services = () => {
               <div className="mt-5 text-[#5F7199] flex flex-col justify-center ">
                 <Typography
                   variant="h6"
-                  className="text-[#033474] text-2xl font-bold pb-5 ">
+                  className="text-[#033474] text-2xl font-bold pb-5 "
+                >
                   Customer Service
                 </Typography>
                 <Typography className="pb-7">24/7 Live agents</Typography>
@@ -158,7 +136,8 @@ const Services = () => {
               <div className="mt-5 text-[#5F7199] flex flex-col justify-center ">
                 <Typography
                   variant="h6"
-                  className="text-[#033474] text-2xl font-bold pb-5 ">
+                  className="text-[#033474] text-2xl font-bold pb-5 "
+                >
                   Cart Recovery
                 </Typography>
                 <Typography className="pb-7">Custom integration</Typography>
@@ -183,7 +162,8 @@ const Services = () => {
               <div className="mt-5 text-[#5F7199] flex flex-col justify-center ">
                 <Typography
                   variant="h6"
-                  className="text-[#033474] text-2xl font-bold pb-5 ">
+                  className="text-[#033474] text-2xl font-bold pb-5 "
+                >
                   Order Taking
                 </Typography>
                 <Typography className="pb-7">Responsive IVR</Typography>
