@@ -114,8 +114,11 @@ const ExpertHelp = () => {
         </div> */}
         <div className="  mt-10  ">
           <div className="px-4 xl:px-10 xl:py-4 py-2 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-4 gap-5 xl:gap-10 ">
-            {EXPERT_HELP.map(({ imgUrl, title, subtitle }) => (
-              <div className="bg-white rounded-[.65rem] xl:rounded-[1.25rem] xl:shadow-md pt-6 pb-4 px-3 flex flex-col gap-3 items-center text-center ">
+            {EXPERT_HELP.map(({ imgUrl, title, subtitle }, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-[.65rem] xl:rounded-[1.25rem] xl:shadow-md pt-6 pb-4 px-3 flex flex-col gap-3 items-center text-center "
+              >
                 <img
                   src={imgUrl}
                   className="w-[2.5rem] h-[2.5rem] md:w-[4rem] md:h-[4rem] xl:w-[9rem] xl:h-[9rem] "

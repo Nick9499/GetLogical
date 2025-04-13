@@ -46,7 +46,7 @@ const Services = () => {
       <div className="flex flex-col items-center gap-10 mt-10">
         {SERVICES.map(
           ({ imgUrl, subtitle1, subtitle2, subtitle3, title }, i) => (
-            <div className="flex flex-col gap-1 items-center">
+            <div className="flex flex-col gap-1 items-center" key={i}>
               <img src={imgUrl} className="w-[3.5rem] h-[3.5rem]  " />
               <Typography className="text-[1.1rem] font-bold leading-[1.75rem] ">
                 {title}
