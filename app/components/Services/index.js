@@ -97,7 +97,7 @@ const Services = () => {
               experiences that turn prospects into loyal customers.
             </Typography>
           </div>
-          <div className="flex  items-center justify-between mt-10">
+          <div className="flex  items-center justify-between gap-1 mt-10">
             {SERVICES.map(
               ({ imgUrl, subtitle1, subtitle2, subtitle3, title }, i) => (
                 <div className="flex flex-col gap-3 " key={i}>
