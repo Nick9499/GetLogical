@@ -20,8 +20,8 @@ export default function Home() {
       <ExpertHelp />
       {/* <HelpBanner /> */}
       <Services />
-      {/* <SeamLessIntegration />
-      <Contact /> */}
+      <SeamLessIntegration />
+      {/* <Contact /> */}
     </div>
   );
 }
