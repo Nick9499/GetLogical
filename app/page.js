@@ -8,6 +8,7 @@ import HelpBanner from "./components/Banner/HelpBanner";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
 import SeamLessIntegration from "./components/SeamlessIntegration";
+import Reviews from "./components/Reviews";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       {/* <HelpBanner /> */}
       <Services />
       <SeamLessIntegration />
+      <Reviews />
       {/* <Contact /> */}
     </div>
   );

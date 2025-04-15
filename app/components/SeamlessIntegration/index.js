@@ -12,9 +12,9 @@ const SeamLessIntegration = () => {
           background:
             "linear-gradient(0deg, #F57E1C 0%, #F57E1C 100%), url(<path-to-image>) lightgray -415.694px 0px / 321.704% 143.478% no-repeat",
         }}
-        className=" text-white px-4 md:px-10 py-12 text-center md:text-left relative overflow-hidden mt-10"
+        className=" text-white flex md:px-10 py-12 text-center md:text-left relative overflow-hidden mt-10"
       >
-        <div className="flex flex-col items-center md:items-start md:w-1/2 gap-3">
+        <div className="flex flex-col items-center md:items-start md:w-[80vw] gap-3 px-4">
           <Typography className="uppercase text-xs md:text-base font-normal tracking-wide">
             Seamless Integration with Your Store
           </Typography>
@@ -28,9 +28,20 @@ const SeamLessIntegration = () => {
             the help of our checkout and CRM partners. For all other platforms,
             talk to us about our custom integration options.
           </p>
+          <Button className=" hidden md:flex normal-case md:text-xl font-medium bg-white  text-[#033474] rounded-[2rem] ">
+            Contact Us
+          </Button>
         </div>
-
-        <Button className="mt-12 normal-case text-sm md:text-xl font-medium bg-white  text-[#033474] rounded-[2rem] ">
+        <div
+          className="hidden md:flex bg-cover bg-no-repeat "
+          style={{ backgroundImage: "url('/integration_md_bg.svg')" }}
+        >
+          <img className="w-full" src="/integration_md.svg" />
+        </div>
+        <div className="mt-10 flex md:hidden">
+          <img className="w-full" src="/integration_sm.svg" />
+        </div>
+        <Button className="-mt-20 md:hidden normal-case text-sm md:text-xl font-medium bg-white  text-[#033474] rounded-[2rem] ">
           Contact Us
         </Button>
       </section>
