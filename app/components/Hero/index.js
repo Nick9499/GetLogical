@@ -46,7 +46,10 @@ const HeroHome = () => {
                   <Avatar src="/omar.svg" />
                   <div className="flex gap-1">
                     {[...Array(5)].map((_, index) => (
-                      <FaStar className="text-[#FBC02D] w-[.35rem] h-[.35rem] " />
+                      <FaStar
+                        key={index}
+                        className="text-[#FBC02D] w-[.35rem] h-[.35rem] "
+                      />
                     ))}
                   </div>
                 </div>
@@ -58,9 +61,9 @@ const HeroHome = () => {
                     CEO/Founder OFactor Media Group
                   </Typography>
                   <Typography className="font-normal text-[1.15rem] ">
-                    "Switching to UpSales was the best thing we ever did. Their
+                    {`"Switching to UpSales was the best thing we ever did. Their
                     customer service and sales department are second to none.
-                    It’s true what they say, New Yorkers have that “X” factor."
+                    It’s true what they say, New Yorkers have that “X” factor."`}
                   </Typography>
                 </div>
               </CardBody>
@@ -132,7 +135,10 @@ const HeroHome = () => {
                 <Avatar src="/omar.svg" />
                 <div className="flex gap-1">
                   {[...Array(5)].map((_, index) => (
-                    <FaStar className="text-[#FBC02D] w-[.35rem] h-[.35rem] " />
+                    <FaStar
+                      key={index}
+                      className="text-[#FBC02D] w-[.35rem] h-[.35rem] "
+                    />
                   ))}
                 </div>
               </div>
@@ -144,9 +150,9 @@ const HeroHome = () => {
                   CEO/Founder OFactor Media Group
                 </Typography>
                 <Typography className="font-normal text-[.5rem] leading-[.875rem]">
-                  "Switching to UpSales was the best thing we ever did. Their
+                  {`"Switching to UpSales was the best thing we ever did. Their
                   customer service and sales department are second to none. It’s
-                  true what they say, New Yorkers have that “X” factor."
+                  true what they say, New Yorkers have that “X” factor."`}
                 </Typography>
               </div>
             </CardBody>

@@ -43,8 +43,9 @@ const Carousel = () => {
   return (
     <>
       <div className="hidden lg:flex  gap-6 mx-8">
-        {REVIEWS.map(({ body, author }) => (
+        {REVIEWS.map(({ body, author }, i) => (
           <Card
+            key={i}
             className="rounded-[0.625rem] my-8 mx-2  "
             style={{ boxShadow: "0px 0px 8px 0px rgba(0, 0, 0, 0.25)" }}
           >
@@ -54,7 +55,10 @@ const Carousel = () => {
               </Typography>
               <div className="flex gap-1">
                 {[...Array(5)].map((_, index) => (
-                  <FaStar className="text-[#FBC02D] w-[1rem] h-[0.625rem] " />
+                  <FaStar
+                    key={index}
+                    className="text-[#FBC02D] w-[1rem] h-[0.625rem] "
+                  />
                 ))}
               </div>
               <Typography className="text-xl font-medium text-[#212D3F] text-left">
@@ -75,8 +79,8 @@ const Carousel = () => {
           className="h-full w-full overflow-visible  "
           style={{ maxWidth: "90vw" }}
         >
-          {REVIEWS.map(({ body, author }) => (
-            <SwiperSlide className="overflow-visible">
+          {REVIEWS.map(({ body, author }, i) => (
+            <SwiperSlide className="overflow-visible" key={i}>
               <Card
                 className="rounded-[0.625rem] text-center my-8 mx-2  "
                 style={{ boxShadow: "0px 0px 8px 0px rgba(0, 0, 0, 0.25)" }}
@@ -87,7 +91,10 @@ const Carousel = () => {
                   </Typography>
                   <div className="flex gap-1">
                     {[...Array(5)].map((_, index) => (
-                      <FaStar className="text-[#FBC02D] w-[0.625rem] h-[0.625rem] " />
+                      <FaStar
+                        key={index}
+                        className="text-[#FBC02D] w-[0.625rem] h-[0.625rem] "
+                      />
                     ))}
                   </div>
                   <Typography className="text-sm font-medium text-[#212D3F]">

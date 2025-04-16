@@ -9,7 +9,7 @@ const Reviews = () => {
       id="review"
     >
       <Typography className="text-xs font-normal text-[#E88E46] px-8 ">
-        DON'T JUST TAKE OUR WORD FOR IT.
+        DON`&apos;`T JUST TAKE OUR WORD FOR IT.
       </Typography>
       <Typography className="text-[1.625rem] font-semibold text-[#0E0E0E] px-5 ">
         See What the{" "}
