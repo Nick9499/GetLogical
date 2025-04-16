@@ -18,17 +18,20 @@ const Reviews = () => {
       </div>
       <div className="mx-6 mt-5">
         <Card
-          className="rounded-3xl w-full"
+          className="rounded-3xl w-[80vw] px-2 "
           style={{
             background:
               "linear-gradient(180deg, #FF9F52 0%, #F18229 50%, #E36500 100%)",
           }}
         >
-          <CardBody className="">
-            <Typography className="text-white text-[.875rem] font-semibold ">
+          <CardBody className="lg:flex justify-between items-center">
+            <Typography
+              className="text-white text-[.875rem] lg:leading-[4.188rem]
+             lg:text-[2.375rem] font-semibold lg:w-1/2"
+            >
               Ready to take the next step for your business?
             </Typography>
-            <Button className="mt-12 normal-case text-sm md:text-xl font-medium bg-white  text-[#033474] rounded-[2rem] ">
+            <Button className="mt-12 lg:mt-0 normal-case text-sm  md:text-xl font-medium bg-white  text-[#033474] rounded-[2rem] ">
               Contact Us
             </Button>
           </CardBody>

@@ -48,7 +48,7 @@ const Carousel = () => {
             className="rounded-[0.625rem] my-8 mx-2  "
             style={{ boxShadow: "0px 0px 8px 0px rgba(0, 0, 0, 0.25)" }}
           >
-            <CardBody className="flex flex-col  gap-4">
+            <CardBody className="flex flex-col  gap-6">
               <Typography className="text-xl text-[#212D3F]  ">
                 {body}
               </Typography>
@@ -57,7 +57,7 @@ const Carousel = () => {
                   <FaStar className="text-[#FBC02D] w-[1rem] h-[0.625rem] " />
                 ))}
               </div>
-              <Typography className="text-xl font-medium text-[#212D3F]">
+              <Typography className="text-xl font-medium text-[#212D3F] text-left">
                 {author}
               </Typography>
             </CardBody>
