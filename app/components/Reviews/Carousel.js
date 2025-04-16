@@ -41,39 +41,65 @@ const REVIEWS = [
 
 const Carousel = () => {
   return (
-    <Swiper
-      modules={[Pagination]}
-      spaceBetween={20}
-      slidesPerView={1}
-      navigation
-      pagination={{ clickable: true }}
-      loop={true}
-      className="h-full w-full overflow-visible"
-      style={{ maxWidth: "90vw" }}
-    >
-      {REVIEWS.map(({ body, author }) => (
-        <SwiperSlide className="overflow-visible">
+    <>
+      <div className="hidden lg:flex  gap-6 mx-8">
+        {REVIEWS.map(({ body, author }) => (
           <Card
-            className="rounded-[0.625rem] text-center my-8 mx-2  "
+            className="rounded-[0.625rem] my-8 mx-2  "
             style={{ boxShadow: "0px 0px 8px 0px rgba(0, 0, 0, 0.25)" }}
           >
-            <CardBody className="flex flex-col items-center gap-4">
-              <Typography className="text-xs text-[#212D3F]  ">
+            <CardBody className="flex flex-col  gap-4">
+              <Typography className="text-xl text-[#212D3F]  ">
                 {body}
               </Typography>
               <div className="flex gap-1">
                 {[...Array(5)].map((_, index) => (
-                  <FaStar className="text-[#FBC02D] w-[0.625rem] h-[0.625rem] " />
+                  <FaStar className="text-[#FBC02D] w-[1rem] h-[0.625rem] " />
                 ))}
               </div>
-              <Typography className="text-sm font-medium text-[#212D3F]">
+              <Typography className="text-xl font-medium text-[#212D3F]">
                 {author}
               </Typography>
             </CardBody>
           </Card>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+        ))}
+      </div>
+      <div className="lg:hidden">
+        <Swiper
+          modules={[Pagination]}
+          spaceBetween={20}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          loop={true}
+          className="h-full w-full overflow-visible  "
+          style={{ maxWidth: "90vw" }}
+        >
+          {REVIEWS.map(({ body, author }) => (
+            <SwiperSlide className="overflow-visible">
+              <Card
+                className="rounded-[0.625rem] text-center my-8 mx-2  "
+                style={{ boxShadow: "0px 0px 8px 0px rgba(0, 0, 0, 0.25)" }}
+              >
+                <CardBody className="flex flex-col items-center gap-4">
+                  <Typography className="text-xs text-[#212D3F]  ">
+                    {body}
+                  </Typography>
+                  <div className="flex gap-1">
+                    {[...Array(5)].map((_, index) => (
+                      <FaStar className="text-[#FBC02D] w-[0.625rem] h-[0.625rem] " />
+                    ))}
+                  </div>
+                  <Typography className="text-sm font-medium text-[#212D3F]">
+                    {author}
+                  </Typography>
+                </CardBody>
+              </Card>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </>
   );
 };
 
