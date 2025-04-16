@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body {
-    font-family: var(--font-sora), sans-serif !important;
-  }
-  
+  font-family: var(--font-sora), sans-serif !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}

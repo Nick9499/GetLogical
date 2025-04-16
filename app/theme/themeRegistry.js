@@ -32,6 +32,7 @@ import {
   Popover,
   PopoverContent,
   PopoverHandler,
+  Carousel,
 } from "@material-tailwind/react";
 
 export {
@@ -66,4 +67,5 @@ export {
   Popover,
   PopoverContent,
   PopoverHandler,
+  Carousel,
 };

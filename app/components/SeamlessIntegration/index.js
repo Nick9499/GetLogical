@@ -12,7 +12,7 @@ const SeamLessIntegration = () => {
           background:
             "linear-gradient(0deg, #F57E1C 0%, #F57E1C 100%), url(<path-to-image>) lightgray -415.694px 0px / 321.704% 143.478% no-repeat",
         }}
-        className=" text-white flex md:px-10 py-12 text-center md:text-left relative overflow-hidden mt-10"
+        className=" text-white md:flex md:px-10 py-12 text-center md:text-left relative overflow-hidden mt-10"
       >
         <div className="flex flex-col items-center md:items-start md:w-[80vw] gap-3 px-4">
           <Typography className="uppercase text-xs md:text-base font-normal tracking-wide">
@@ -42,7 +42,7 @@ const SeamLessIntegration = () => {
           <img className="w-full" src="/integration_sm.svg" />
         </div>
         <Button className="-mt-20 md:hidden normal-case text-sm md:text-xl font-medium bg-white  text-[#033474] rounded-[2rem] ">
-          Contact Us
+          Contact Uss
         </Button>
       </section>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Card, CardBody, Typography } from "../../theme/themeRegistry";
+import Carousel from "./Carousel";
 
 const Reviews = () => {
   return (
@@ -12,6 +13,9 @@ const Reviews = () => {
         <span className="text-[#E88E46]">World’s Leading Companies</span> Have
         to Say
       </Typography>
+      <div className=" mt-10">
+        <Carousel />
+      </div>
       <div className="mx-6 mt-5">
         <Card
           className="rounded-3xl w-full"
@@ -20,7 +24,7 @@ const Reviews = () => {
               "linear-gradient(180deg, #FF9F52 0%, #F18229 50%, #E36500 100%)",
           }}
         >
-          <CardBody>
+          <CardBody className="">
             <Typography className="text-white text-[.875rem] font-semibold ">
               Ready to take the next step for your business?
             </Typography>
