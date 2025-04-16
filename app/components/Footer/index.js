@@ -2,7 +2,7 @@
 "use client";
 import React from "react";
 import { Typography, IconButton } from "../../theme/themeRegistry";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { PhoneIcon } from "@heroicons/react/24/solid";
 import { FiFacebook } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa6";
@@ -52,13 +52,37 @@ const Footer = () => {
           <Typography className="capitalize pb-2 text-[1.375rem] leading-[26px] font-semibold ">
             quick links
           </Typography>
-          <Link href="/" className="text=[1rem] pb-1">
+          <Link
+            to="service"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            href="/"
+            className="text=[1rem] pb-1"
+          >
             Services
           </Link>
-          <Link href="/" className="text=[1rem] pb-1 ">
+          <Link
+            to="integrations"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            href="/"
+            className="text=[1rem] pb-1 "
+          >
             Integrations
           </Link>
-          <Link href="/" className="text=[1rem] pb-1 ">
+          <Link
+            to="review"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            href="/"
+            className="text=[1rem] pb-1 "
+          >
             Testimonials
           </Link>
           <Link href="/" className="text=[1rem]  pb-1">

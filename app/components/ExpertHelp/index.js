@@ -75,7 +75,7 @@ const ExpertHelp = () => {
             ))}
           </div>
           <div className="flex justify-center items-center w-screen mt-5 pb-10  ">
-            <Button className="bg-[#212D3F] rounded-3xl normal-case ">
+            <Button className="bg-[#212D3F] text-sm lg:text-xl rounded-3xl normal-case ">
               Contact Us
             </Button>
           </div>

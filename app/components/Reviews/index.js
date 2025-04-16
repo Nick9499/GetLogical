@@ -4,7 +4,10 @@ import Carousel from "./Carousel";
 
 const Reviews = () => {
   return (
-    <div className="flex flex-col items-center pt-10   text-center ">
+    <div
+      className="flex flex-col items-center pt-10   text-center "
+      id="review"
+    >
       <Typography className="text-xs font-normal text-[#E88E46] px-8 ">
         DON'T JUST TAKE OUR WORD FOR IT.
       </Typography>

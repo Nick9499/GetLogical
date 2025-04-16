@@ -51,7 +51,15 @@ function NavList() {
 
       <Typography variant="small" color="blue-gray" className="font-medium">
         <ListItem className="flex items-center gap-2 py-2 pr-4">
-          <Link href="/">Testimonials</Link>
+          <Link
+            to="review"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Testimonials
+          </Link>
         </ListItem>
       </Typography>
     </List>
@@ -98,7 +106,16 @@ function NavListForSmallDevice({ setOpenNav }) {
           className="flex items-center gap-2 py-2 pr-4"
           onClick={() => setOpenNav(false)}
         >
-          <Link href="/">Testimonials</Link>
+          <Link
+            to="review"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            onClick={() => setOpenNav(false)}
+          >
+            Testimonials
+          </Link>
         </ListItem>
       </Typography>
     </List>
@@ -126,7 +143,7 @@ export function GetLogicCallNavbar() {
      mt-4 md:mt-7 rounded-[4.313rem] top-2 z-10 "
     >
       <div className="flex items-center justify-between text-blue-gray-900">
-        <Link href="/">
+        <Link to="/">
           <div className=" max-w-[2rem] max-h-[2rem] md:max-w-[70px] md:max-h-[70px]">
             <img src="/logo.svg" alt="logo" className="w-full h-full" />
           </div>
