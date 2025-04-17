@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
-import { Button, Chip, Typography } from "../../theme/themeRegistry";
-import { Link } from "react-scroll";
+import { Button, Typography } from "../../theme/themeRegistry";
 
 const SeamLessIntegration = () => {
   return (

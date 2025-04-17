@@ -1,13 +1,8 @@
 "use client";
 import React from "react";
-import {
-  Avatar,
-  Button,
-  Card,
-  CardBody,
-  Typography,
-} from "../../theme/themeRegistry";
+import { Avatar, Card, CardBody, Typography } from "../../theme/themeRegistry";
 import { FaStar } from "react-icons/fa";
+import Image from "next/image";
 
 const HeroHome = () => {
   return (
@@ -86,8 +81,8 @@ const HeroHome = () => {
                   Conversion Rate
                 </Typography>
               </div>
-              <div>
-                <img src="/growth_vector.svg" className="w-full h-full" />
+              <div className="relative w-full h-full">
+                <Image src="/growth_vector.svg" fill alt="" />
               </div>
               <div className="flex flex-col items-end">
                 <Typography className="text-base font-semibold">
@@ -174,8 +169,8 @@ const HeroHome = () => {
                   Conversion Rate
                 </Typography>
               </div>
-              <div>
-                <img src="/growth_vector.svg" className="w-full h-full" />
+              <div className="relative w-full h-full">
+                <Image src="/growth_vector.svg" fill alt="" />
               </div>
               <div className="flex flex-col items-end">
                 <Typography className="text-base font-semibold">

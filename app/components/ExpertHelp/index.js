@@ -1,16 +1,6 @@
 import React from "react";
-import {
-  Avatar,
-  Button,
-  List,
-  ListItem,
-  ListItemPrefix,
-  Typography,
-} from "../../theme/themeRegistry";
-import ConvoCard from "./ConvoCard";
-import DashboardCard from "./DashboardCard";
-import RevenueCard from "./RevenueCard";
-import CustomerCard from "./CustomerCard";
+import { Button, Typography } from "../../theme/themeRegistry";
+import Image from "next/image";
 
 const EXPERT_HELP = [
   {
@@ -59,10 +49,10 @@ const ExpertHelp = () => {
                 key={i}
                 className="bg-white rounded-[.65rem] xl:rounded-[1.25rem] xl:shadow-md pt-6 pb-4 px-3 flex flex-col gap-3 items-center text-center "
               >
-                <img
-                  src={imgUrl}
-                  className="w-[2.5rem] h-[2.5rem] md:w-[4rem] md:h-[4rem] xl:w-[9rem] xl:h-[9rem] "
-                />
+                <div className="relative w-[2.5rem] h-[2.5rem] md:w-[4rem] md:h-[4rem] xl:w-[9rem] xl:h-[9rem] ">
+                  <Image src={imgUrl} fill alt="" />
+                </div>
+
                 <div>
                   <Typography className="text-[.75rem] md:text-[1rem] xl:text-[2rem] text-[#0E0E0E] font-semibold mb-1">
                     {title}
