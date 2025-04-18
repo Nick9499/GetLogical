@@ -3,7 +3,6 @@
 import React from "react";
 import { Typography, IconButton } from "../../theme/themeRegistry";
 import { Link } from "react-scroll";
-import { PhoneIcon } from "@heroicons/react/24/solid";
 import { FiFacebook } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa6";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
