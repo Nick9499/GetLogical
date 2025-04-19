@@ -82,7 +82,7 @@ const Footer = () => {
           >
             Testimonials
           </Link>
-          <NextLink href="/" className="text=[1rem]  pb-1">
+          <NextLink href="/contact" className="text=[1rem]  pb-1">
             Contact Us
           </NextLink>
         </div>

@@ -2,6 +2,7 @@
 "use client";
 import React from "react";
 import { Button, Typography } from "../../theme/themeRegistry";
+import Link from "next/link";
 
 const SeamLessIntegration = () => {
   return (
@@ -30,12 +31,14 @@ const SeamLessIntegration = () => {
             the help of our checkout and CRM partners. For all other platforms,
             talk to us about our custom integration options.
           </p>
-          <Button
-            className=" hidden lg:mt-10 lg:flex normal-case lg:text-xl font-medium bg-white
+          <Link href="/contact">
+            <Button
+              className=" hidden lg:mt-10 lg:flex normal-case lg:text-xl font-medium bg-white
             text-[#033474] rounded-[2rem] "
-          >
-            Contact Us
-          </Button>
+            >
+              Contact Us
+            </Button>
+          </Link>
         </div>
         <div className="hidden lg:flex  ">
           <img className="w-full h-full" src="/integration_md.svg" />
@@ -43,12 +46,14 @@ const SeamLessIntegration = () => {
         <div className="mt-10 flex lg:hidden">
           <img className="w-full" src="/integration_sm.svg" />
         </div>
-        <Button
-          className="-mt-20 lg:hidden normal-case text-sm lg:text-xl font-medium bg-white 
+        <Link href="/contact">
+          <Button
+            className="-mt-20 lg:hidden normal-case text-sm lg:text-xl font-medium bg-white 
          text-[#033474] rounded-[2rem] "
-        >
-          Contact Us
-        </Button>
+          >
+            Contact Us
+          </Button>
+        </Link>
       </section>
     </div>
   );

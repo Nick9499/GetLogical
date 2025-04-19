@@ -123,11 +123,6 @@ function NavListForSmallDevice({ setOpenNav }) {
 export function GetLogicCallNavbar() {
   const [openNav, setOpenNav] = useState(false);
 
-  const handleCallUs = () => {
-    const phoneNumber = "8779888726";
-    window.location.href = "tel:" + phoneNumber;
-  };
-
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 960) setOpenNav(false);
@@ -152,14 +147,15 @@ export function GetLogicCallNavbar() {
           <NavList />
         </div>
         <div className="hidden gap-2 lg:flex">
-          <Button
-            variant="filled"
-            className="capitalize bg-[#E88E46] 
+          <NextLink href="/contact">
+            <Button
+              variant="filled"
+              className="capitalize bg-[#E88E46] 
           rounded-[2.188rem] text-base font-medium "
-            onClick={handleCallUs}
-          >
-            Contact Us
-          </Button>
+            >
+              Contact Us
+            </Button>
+          </NextLink>
         </div>
 
         <IconButton

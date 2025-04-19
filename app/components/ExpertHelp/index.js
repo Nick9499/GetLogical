@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Typography } from "../../theme/themeRegistry";
 import Image from "next/image";
+import Link from "next/link";
 
 const EXPERT_HELP = [
   {
@@ -65,9 +66,11 @@ const ExpertHelp = () => {
             ))}
           </div>
           <div className="flex justify-center items-center w-screen mt-5 pb-10  ">
-            <Button className="bg-[#212D3F] text-sm lg:text-xl rounded-3xl normal-case ">
-              Contact Us
-            </Button>
+            <Link href="/contact">
+              <Button className="bg-[#212D3F] text-sm lg:text-xl rounded-3xl normal-case ">
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

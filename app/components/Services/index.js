@@ -2,7 +2,7 @@
 "use client";
 import React from "react";
 import { Button, Typography } from "../../theme/themeRegistry";
-import { Link } from "react-scroll";
+import Link from "next/link";
 
 const SERVICES = [
   {
@@ -78,9 +78,11 @@ const Services = () => {
               Schedule a Demo today!
             </Typography>
           </div>
-          <Button className="bg-[#212D3F] rounded-3xl normal-case ">
-            Contact Us
-          </Button>
+          <Link href="/contact">
+            <Button className="bg-[#212D3F] rounded-3xl normal-case ">
+              Contact Us
+            </Button>
+          </Link>
         </div>
       </div>
       <div className=" hidden xl:flex justify-between mt-20 px-10 ">
@@ -127,9 +129,11 @@ const Services = () => {
                 Schedule a Demo today!
               </Typography>
             </div>
-            <Button className="bg-[#212D3F] text-[1.25rem] rounded-[2.25rem] normal-case ">
-              Book a Call
-            </Button>
+            <Link href="/contact">
+              <Button className="bg-[#212D3F] text-[1.25rem] rounded-[2.25rem] normal-case ">
+                Book a Call
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="w-[40vw]">

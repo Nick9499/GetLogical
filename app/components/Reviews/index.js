@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Card, CardBody, Typography } from "../../theme/themeRegistry";
 import Carousel from "./Carousel";
+import Link from "next/link";
 
 const Reviews = () => {
   return (
@@ -34,9 +35,11 @@ const Reviews = () => {
             >
               Ready to take the next step for your business?
             </Typography>
-            <Button className="mt-12 lg:mt-0 normal-case text-sm  md:text-xl font-medium bg-white  text-[#033474] rounded-[2rem] ">
-              Contact Us
-            </Button>
+            <Link href="/contact">
+              <Button className="mt-12 lg:mt-0 normal-case text-sm  md:text-xl font-medium bg-white  text-[#033474] rounded-[2rem] ">
+                Contact Us
+              </Button>
+            </Link>
           </CardBody>
         </Card>
       </div>
