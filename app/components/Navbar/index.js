@@ -12,18 +12,16 @@ import {
   ListItem,
   Collapse,
   List,
-  Popover,
-  PopoverContent,
-  PopoverHandler,
 } from "../../theme/themeRegistry";
-import { Bars3Icon, PhoneIcon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-scroll";
+import NextLink from "next/link";
 
 function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-      <Typography variant="small" color="blue-gray" className="font-medium">
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
+      <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <Typography variant="small" color="blue-gray" className="font-medium">
           <Link
             to="service"
             spy={true}
@@ -33,10 +31,10 @@ function NavList() {
           >
             Services
           </Link>
-        </ListItem>
-      </Typography>
-      <Typography variant="small" color="blue-gray" className="font-medium">
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
+        </Typography>
+      </ListItem>
+      <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <Typography variant="small" color="blue-gray" className="font-medium">
           <Link
             to="integrations"
             spy={true}
@@ -46,11 +44,11 @@ function NavList() {
           >
             Integrations
           </Link>
-        </ListItem>
-      </Typography>
+        </Typography>
+      </ListItem>
 
-      <Typography variant="small" color="blue-gray" className="font-medium">
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
+      <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <Typography variant="small" color="blue-gray" className="font-medium">
           <Link
             to="review"
             spy={true}
@@ -60,8 +58,8 @@ function NavList() {
           >
             Testimonials
           </Link>
-        </ListItem>
-      </Typography>
+        </Typography>
+      </ListItem>
     </List>
   );
 }
@@ -72,8 +70,8 @@ function NavListForSmallDevice({ setOpenNav }) {
       onBlur={() => setOpenNav(false)}
       className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 "
     >
-      <Typography variant="small" color="blue-gray" className="font-medium">
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
+      <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <Typography variant="small" color="blue-gray" className="font-medium">
           <Link
             to="service"
             spy={true}
@@ -84,10 +82,10 @@ function NavListForSmallDevice({ setOpenNav }) {
           >
             Services
           </Link>
-        </ListItem>
-      </Typography>
-      <Typography variant="small" color="blue-gray" className="font-medium">
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
+        </Typography>
+      </ListItem>
+      <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <Typography variant="small" color="blue-gray" className="font-medium">
           <Link
             to="integrations"
             spy={true}
@@ -98,14 +96,14 @@ function NavListForSmallDevice({ setOpenNav }) {
           >
             Integrations
           </Link>
-        </ListItem>
-      </Typography>
+        </Typography>
+      </ListItem>
 
-      <Typography variant="small" color="blue-gray" className="font-medium">
-        <ListItem
-          className="flex items-center gap-2 py-2 pr-4"
-          onClick={() => setOpenNav(false)}
-        >
+      <ListItem
+        className="flex items-center gap-2 py-2 pr-4"
+        onClick={() => setOpenNav(false)}
+      >
+        <Typography variant="small" color="blue-gray" className="font-medium">
           <Link
             to="review"
             spy={true}
@@ -116,8 +114,8 @@ function NavListForSmallDevice({ setOpenNav }) {
           >
             Testimonials
           </Link>
-        </ListItem>
-      </Typography>
+        </Typography>
+      </ListItem>
     </List>
   );
 }
@@ -131,10 +129,12 @@ export function GetLogicCallNavbar() {
   };
 
   useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false)
-    );
+    const handleResize = () => {
+      if (window.innerWidth >= 960) setOpenNav(false);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -143,11 +143,11 @@ export function GetLogicCallNavbar() {
      mt-4 md:mt-7 rounded-[4.313rem] top-2 z-10 "
     >
       <div className="flex items-center justify-between text-blue-gray-900">
-        <Link to="/">
+        <NextLink href="/">
           <div className=" max-w-[2rem] max-h-[2rem] md:max-w-[70px] md:max-h-[70px]">
             <img src="/logo.svg" alt="logo" className="w-full h-full" />
           </div>
-        </Link>
+        </NextLink>
         <div className="hidden lg:block">
           <NavList />
         </div>

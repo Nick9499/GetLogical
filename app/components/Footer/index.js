@@ -7,6 +7,7 @@ import { FiFacebook } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa6";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { PiMapPinAreaBold } from "react-icons/pi";
+import NextLink from "next/link";
 
 const Footer = () => {
   return (
@@ -16,11 +17,11 @@ const Footer = () => {
         lg:gap-x-20 lg:px-20 md:pb-10   text-white px-10  "
       >
         <div className="pt-10 md:pt-0 flex flex-col items-center ">
-          <Link href="/">
+          <NextLink href="/">
             <div className="max-w-[70px] max-h-[70px]">
               <img src="/logo_white.svg" alt="logo" className="w-full h-full" />
             </div>
-          </Link>
+          </NextLink>
 
           <Typography className="pt-2 text-[.875rem] font-normal ">
             Upsales works to service the customers who bought and convert the
@@ -57,7 +58,6 @@ const Footer = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            href="/"
             className="text=[1rem] pb-1"
           >
             Services
@@ -68,7 +68,6 @@ const Footer = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            href="/"
             className="text=[1rem] pb-1 "
           >
             Integrations
@@ -79,14 +78,13 @@ const Footer = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            href="/"
             className="text=[1rem] pb-1 "
           >
             Testimonials
           </Link>
-          <Link href="/" className="text=[1rem]  pb-1">
+          <NextLink href="/" className="text=[1rem]  pb-1">
             Contact Us
-          </Link>
+          </NextLink>
         </div>
 
         <div className="flex flex-col items-center md:items-start pt-9 md:pt-20 ">

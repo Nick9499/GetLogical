@@ -3,17 +3,14 @@ import "./globals.css";
 import { ThemeProvider } from "./theme/themeRegistry";
 import GetLogicCallNavbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
-
+import GoogleAnalytics from "./components/GA";
 
 const sora = Sora({
-  subsets: ['latin'],
-  weight: ['100', '300', '400', '500', '600', '700', '800'],
-  variable: '--font-sora',
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-sora",
+  display: "swap",
 });
-
-
 
 export const metadata = {
   title: "GetLogicall",
@@ -24,7 +21,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={sora.variable}>
       <ThemeProvider>
-        <body  className="font-sora">
+        <body className="font-sora">
+          <GoogleAnalytics />
           <GetLogicCallNavbar />
           {children}
           <Footer />
