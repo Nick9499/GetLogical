@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Typography, Input, Textarea, Button } from "../../theme/themeRegistry";
+import axios from "axios";
 
 const ContactInputsContainer = () => {
   const [formState, setFormState] = useState({
@@ -19,7 +20,17 @@ const ContactInputsContainer = () => {
     setFormState((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = () => {};
+  const handleSendMail = async () => {
+    try {
+      const res = await axios.post("/api/send-mail", formState);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const handleSubmit = () => {
+    handleSendMail();
+  };
 
   return (
     <div className="flex flex-col justify-center items-center text-center px-4 mt-8">

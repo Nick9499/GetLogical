@@ -1,12 +1,16 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
+const user = process.env.FORWARD_EMAIL;
+const password = process.env.FORWARD_EMAIL_PASSWORD;
+const leadEmail = process.env.TO_EMAIL;
+
 // create reusable transporter object using the default SMTP transport
 let transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "hello@getlogicall.com",
-    pass: "wnsn ngvu zbeb vkvj",
+    user,
+    pass: password,
   },
 });
 
@@ -17,8 +21,8 @@ export async function POST(request) {
 
   // setup email data with unicode symbols
   let mailOptions = {
-    from: "hello@getlogicall.com",
-    to: "Leads@getlogicall.com",
+    from: user,
+    to: leadEmail,
     subject: `Customer's Information`,
     html: `
     <h2 style='text-align:center'>Customer's Information</h2>
