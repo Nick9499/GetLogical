@@ -13,14 +13,14 @@ const SERVICES = [
     subtitle3: "82% 1st Contact Resolution",
   },
   {
-    imgUrl: "/high_impact.svg",
+    imgUrl: "/cart_recovery.svg",
     title: "Cart Recovery",
     subtitle1: "Custom Integrations",
     subtitle2: "20% Average Rate of Recovery",
     subtitle3: "$180 Average Order Value",
   },
   {
-    imgUrl: "/high_impact.svg",
+    imgUrl: "/high_ticket_coaching.svg",
     title: "High Ticket Coaching",
     subtitle1: "One-on-one expert coaching.",
     subtitle2: "Focused on health and wellness.",
