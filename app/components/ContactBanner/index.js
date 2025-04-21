@@ -24,15 +24,10 @@ const ContactBanner = () => {
               We’re ready to help you tackle what’s holding you back
             </Typography>
           </div>
-          <div>
-            <Button className="bg-[#212D3F] text-xl leading-[1.094rem]  rounded-3xl normal-case">
-              Book a Call
-            </Button>
-          </div>
         </div>
       </div>
       <div
-        className="flex flex-col gap-10 lg:hidden -mt-16 md:-mt-24  bg-bottom  w-screen  items-center pt-24 pb-20 px-4"
+        className="flex flex-col gap-10 lg:hidden -mt-16 md:-mt-24  bg-bottom  w-screen  items-center pt-24 pb-14 px-4"
         style={{
           background: `url(/banner_xs.svg)`,
           backgroundRepeat: "no-repeat",
@@ -49,11 +44,6 @@ const ContactBanner = () => {
           <Typography className="mt-3 px-2  text-[.875rem] font-normal text-center">
             We’re ready to help you tackle what’s holding you back
           </Typography>
-        </div>
-        <div>
-          <Button className="bg-[#212D3F] text-sm  rounded-3xl normal-case">
-            Book a Call
-          </Button>
         </div>
       </div>
     </>

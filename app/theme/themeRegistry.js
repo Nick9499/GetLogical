@@ -33,6 +33,7 @@ import {
   PopoverContent,
   PopoverHandler,
   Carousel,
+  Textarea,
 } from "@material-tailwind/react";
 
 export {
@@ -68,4 +69,5 @@ export {
   PopoverContent,
   PopoverHandler,
   Carousel,
+  Textarea,
 };
