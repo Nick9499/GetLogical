@@ -99,7 +99,7 @@ const Footer = () => {
                 Phone
               </Typography>
               <Typography className="pb-1 text-[1rem] font-normal leading-[1.5rem] ">
-                914-517-0226
+                212-461-4060
               </Typography>
             </div>
           </div>
@@ -110,7 +110,7 @@ const Footer = () => {
                 Location
               </Typography>
               <Typography className="pb-1 text-[1rem] md:text-[1rem] font-normal leading-[1.5rem] md:text-left ">
-                16192 COASTAL HIGHWAY LEWES, DELAWARE 19958
+                44 Mamaroneck Ave #2F, White Plains, NY 10601
               </Typography>
             </div>
           </div>

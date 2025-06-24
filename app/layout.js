@@ -13,8 +13,9 @@ const sora = Sora({
 });
 
 export const metadata = {
-  title: "GetLogicall",
-  description: "The fastest and surest way to sell your home",
+  title: "Upsales",
+  description:
+    "UpSales works to service the customers who bought and convert the customers who didn’t. ",
 };
 
 export default function RootLayout({ children }) {
